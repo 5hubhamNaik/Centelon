@@ -26,6 +26,7 @@ public class LandingPageLocator {
     @FindBy(id = "email_address")
     public WebElement textbox_EmailAddress;
 
+
     @FindBy(id = "password")
     public WebElement textbox_Password;
 
