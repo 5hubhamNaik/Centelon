@@ -20,10 +20,14 @@ import java.util.Properties;
 public abstract class BaseTest {
 
     LandingPageAction landingPageAction;
+    CreateAccountPageAction createAccountPageAction;
+    MyAccountPageAction myAccountPageAction;
 
     @BeforeTest(alwaysRun = true)
     public void setupObjects() {
         landingPageAction = new LandingPageAction();
+        createAccountPageAction = new CreateAccountPageAction();
+        myAccountPageAction = new MyAccountPageAction();
     }
 
     @BeforeTest(alwaysRun = true)

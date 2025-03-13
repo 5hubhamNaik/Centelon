@@ -10,12 +10,11 @@ public class CentelonQALeadTest extends BaseTest {
     @Test()
     public void CentelonTest() {
         {
-            TestCaseData testData = SetTestCaseData.Test();
+            TestCaseData testData = SetTestCaseData.CentelonTest();
             landingPageAction.openLandingPage();
             landingPageAction.navigateToCreateAccount();
-            waitforSeconds(5);
-            landingPageAction.createNewCustomerAccount(testData.getFirstName(), testData.getLastName(), testData.getEmailAddress(), testData.getPassword(), testData.getConfirmPassword());
-            landingPageAction.verifyContactInformation(testData.getFirstName(), testData.getLastName(), testData.getEmailAddress());
+            createAccountPageAction.createNewCustomerAccount(testData.getFirstName(), testData.getLastName(), testData.getEmailAddress(), testData.getPassword(), testData.getConfirmPassword());
+            myAccountPageAction.verifyContactInformation(testData.getFirstName(), testData.getLastName(), testData.getEmailAddress());
 
         }
     }
