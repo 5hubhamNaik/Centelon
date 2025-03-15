@@ -15,7 +15,6 @@ public class CentelonQALeadTest extends BaseTest {
             landingPageAction.navigateToCreateAccount();
             createAccountPageAction.createNewCustomerAccount(testData.getFirstName(), testData.getLastName(), testData.getEmailAddress(), testData.getPassword(), testData.getConfirmPassword());
             myAccountPageAction.verifyContactInformation(testData.getFirstName(), testData.getLastName(), testData.getEmailAddress());
-
         }
     }
 
