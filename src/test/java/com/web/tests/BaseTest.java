@@ -57,7 +57,8 @@ public abstract class BaseTest {
     @BeforeTest(alwaysRun = true)
     public static void setupDriver() {
         log.info("Setting up driver");
-        DriverManager.setDriver(GlobalData.EXECUTION_BROWSER);
+//        DriverManager.setDriver(GlobalData.EXECUTION_BROWSER_FIREFOX);
+        DriverManager.setDriver(GlobalData.EXECUTION_BROWSER_CHROME);
         log.info("Driver setup done");
     }
 
