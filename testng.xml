@@ -9,7 +9,7 @@
     <test name="VerizonDirectOrdersTest">
 
       <classes>
-            <class name="com.web.tests.VerizonDirectOrdersTest"/>
+            <class name="com.web.tests.CentelonQALeadTest"/>
         </classes>
     </test> <!-- Test -->
 
